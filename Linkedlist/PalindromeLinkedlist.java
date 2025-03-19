@@ -38,10 +38,14 @@ public class PalindromeLinkedlist {
         if (head == null || head.next == null) {
             return head;
         }
+        // reverse the remaining part
         ListNode newHead = reverse(head.next);
 
+        // store the next node
         ListNode front = head.next;
+        // pointing the next node to head(to the previous node)
         front.next = head;
+        // removing the previous connection(it was pointing to the next element)
         head.next = null;
 
         return newHead;

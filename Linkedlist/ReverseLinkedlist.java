@@ -1,5 +1,39 @@
 package LinkedList;
 
+//for gfg
+class Node {
+    int data;
+    Node next, random, child, prev, left, right;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        random = null;
+        child = null;
+        prev = null;
+        left = null;
+        right = null;
+    }
+}
+
+// Definition for singly-linked list.(for leetcode)
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
 public class ReverseLinkedlist {
     public ListNode reverseList(ListNode head) {
         // if node is null of has only one node
